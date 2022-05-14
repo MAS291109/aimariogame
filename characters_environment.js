@@ -125,8 +125,8 @@ function game(){
 
 // change game status if any key is pressed
 function changeGameStatud(character){
-  if(GameStatus=="start" && noseX != "" && gameConfig.status==="start") {
-    document.getElementById(status).innerHTML = "Game is Loaded";
+  if(noseX != " " && gameConfig.status==="start"  && GameStatus=="start"  ) {
+    document.getElementById("status").innerHTML = "Game is Loaded";
     world_start.play();
     initializeCharacterStatus(mario);
     gameConfig.status= "play";
